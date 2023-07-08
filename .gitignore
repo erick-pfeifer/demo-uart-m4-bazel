@@ -1,0 +1,6 @@
+# Build output directories
+bazel-*
+out
+
+# VS Code
+*.code-workspace
