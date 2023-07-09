@@ -4,3 +4,14 @@ out
 
 # VS Code
 *.code-workspace
+
+# Pigweed
+.environment/
+environment/
+out/
+.pw_ide
+build_overrides/pigweed_environment.gni
+
+# Tools
+*.pyc
+__pycache__/
