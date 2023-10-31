@@ -79,6 +79,15 @@ SETUP_SH="$_PW_ACTUAL_ENVIRONMENT_ROOT/activate.sh"
 
 # Downstream projects may wish to set PW_BANNER_FUNC to a function that prints
 # an ASCII art banner here.
+export PW_BRANDING_BANNER="$PROJECT_ROOT/tools/banner.txt"
+export PW_BRANDING_BANNER_COLOR=yellow
+
+modem_banner() {
+  cat "$PW_BRANDING_BANNER"
+  echo
+}
+
+PW_BANNER_FUNC="modem_banner"
 
 # Run full bootstrap when invoked as bootstrap, or env file is missing/empty.
 if [ "$(basename "$_PW_BOOTSTRAP_PATH")" = "bootstrap.sh" ] || \
