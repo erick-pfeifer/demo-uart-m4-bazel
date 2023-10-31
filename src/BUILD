@@ -18,5 +18,7 @@ cc_binary(
         ":main",
         "//targets/atsame54n20a:linker_script",
         "//targets/atsame54n20a:pre_init",
+        # Resolves dependencies to lib nano (_write, _read, etc) with stubs.
+        "@pigweed//pw_toolchain/arm_gcc:arm_none_eabi_gcc_support",
     ],
 )
