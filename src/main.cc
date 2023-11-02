@@ -1,7 +1,7 @@
-#include <string_view>
 #include <cstddef>
+#include <string_view>
 
-[[maybe_unused]]const std::string_view kGlobalVariableData{"Sample"};
+[[maybe_unused]] const std::string_view kGlobalVariableData{"Sample"};
 
 int main() {
   size_t i = 0;
