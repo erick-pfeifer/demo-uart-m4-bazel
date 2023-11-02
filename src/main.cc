@@ -1,11 +1,12 @@
 #include <string_view>
+#include <cstddef>
 
-[[maybe_unused]] std::string_view global_variable_data{"Sample"};
+[[maybe_unused]]const std::string_view kGlobalVariableData{"Sample"};
 
 int main() {
-  int i = 0;
-  if (global_variable_data.size() > 0) {
-    i = global_variable_data.size();
+  size_t i = 0;
+  if (!kGlobalVariableData.empty()) {
+    i = kGlobalVariableData.size();
   }
   return 0;
 }
