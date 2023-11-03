@@ -9,6 +9,7 @@ cc_library(
     copts = ["-std=c++17"],
     linkopts = ["-Wl,-Map=app.map"],
     visibility = ["//visibility:public"],
+    deps = ["@atsame54_device_pack//:same54n20a_deps"],
 )
 
 cc_binary(
