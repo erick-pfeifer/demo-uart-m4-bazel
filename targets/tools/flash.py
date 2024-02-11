@@ -28,6 +28,7 @@ def flash(board_serial):
     binary = r.Rlocation(_BINARY_PATH)
     openocd_cfg = r.Rlocation(_OPENOCD_CONFIG_PATH)
 
+    print(f"Board Serial: {board_serial}")
     print(f"binary Rlocation is: {binary}")
     print(f"openocd Rlocation is: {openocd}")
     print(f"openocd config Rlocation is: {openocd_cfg}")
